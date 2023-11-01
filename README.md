@@ -1,2 +1,0 @@
-# yesGermany
-Yes germany application
