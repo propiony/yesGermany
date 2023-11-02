@@ -1,42 +1,42 @@
 // Color Variables
-$primary-color: #007bff;   // Define your primary brand color
+$primary-color: #007bff; // Define your primary brand color
 $secondary-color: #6c757d; // Define a secondary color
 
 // Typography Variables
-$base-font-size: 16px;      // Define the base font size for the entire app
-$font-family: 'Mona-Sans', sans-serif; // Define the default font family
-$heading-font-family: 'Roboto', sans-serif; // Font for headings
+$base-font-size: 16px; // Define the base font size for the entire app
+$font-family: "Mona-Sans", sans-serif; // Define the default font family
+$heading-font-family: "Roboto", sans-serif; // Font for headings
 
-$h1-font-size: 2rem;      // Font size for <h1> elements
-$h2-font-size: 1.5rem;    // Font size for <h2> elements
+$h1-font-size: 2rem; // Font size for <h1> elements
+$h2-font-size: 1.5rem; // Font size for <h2> elements
 
 // Spacing Variables
-$spacing-unit: 8px;       // Define a spacing unit for consistent padding/margin
-$container-max-width: 1200px; // Define the maximum width for the content container
+$spacing-unit: 8px; // Define a spacing unit for consistent padding/margin
+$container-max-width: 1280px; // Define the maximum width for the content container
 
 // Border Variables
-$border-width: 1px;       // Define a default border width
-$border-radius: 4px;      // Define a default border radius
+$border-width: 1px; // Define a default border width
+$border-radius: 4px; // Define a default border radius
 
 // Box Shadow Variables
 $box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Define a default box shadow
 
 // Z-Index Variables
-$z-index-modal: 1000;     // Define a z-index for modal dialogs
-$z-index-dropdown: 100;   // Define a z-index for dropdown menus
+$z-index-modal: 1000; // Define a z-index for modal dialogs
+$z-index-dropdown: 100; // Define a z-index for dropdown menus
 
 // Media Query Variables
-$breakpoint-sm: 576px;    // Small screen breakpoint
-$breakpoint-md: 768px;    // Medium screen breakpoint
-$breakpoint-lg: 992px;    // Large screen breakpoint
+$breakpoint-sm: 576px; // Small screen breakpoint
+$breakpoint-md: 768px; // Medium screen breakpoint
+$breakpoint-lg: 992px; // Large screen breakpoint
 
 // Animation Variables
 $transition-duration: 0.3s; // Define a default transition duration
 
 // Responsive Typography
-$small-font-size: 14px;   // Font size for small screens
-$medium-font-size: 16px;  // Font size for medium screens
-$large-font-size: 18px;   // Font size for large screens
+$small-font-size: 14px; // Font size for small screens
+$medium-font-size: 16px; // Font size for medium screens
+$large-font-size: 18px; // Font size for large screens
 
 // Example usage in your SCSS file
 body {
@@ -61,6 +61,16 @@ h2 {
   border: $border-width solid $primary-color;
   border-radius: $border-radius;
   transition: background-color $transition-duration;
+}
+.btn-primary {
+  border-radius: 8px;
+  background: linear-gradient(180deg, #f7d545 0%, #d8ae00 100%);
+  border: none;
+  color: black;
+}
+
+.nav-link{
+  padding:  0 16px!important;
 }
 
 .container {
