@@ -1,7 +1,9 @@
+import "../styles/home.scss";
+import Navbar from "../components/Navbar";
+
 const Home = () => (
   <>
-    <p>Hey been trying to meet you!!</p>
-    <button type="button" class="btn btn-primary">Base class</button>
+  <Navbar/>
   </>
 );
 export default Home;

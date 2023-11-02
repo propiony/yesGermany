@@ -1,0 +1,19 @@
+.navbar-nav .nav-item {
+    position: relative;
+  }
+
+  .navbar-nav .nav-item:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #000000;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+  }
+
+  .navbar-nav .nav-item:hover:after {
+    width: 80%;
+  }
