@@ -1,20 +1,16 @@
-import logo from "./logo.svg";
-import Landing from "./pages/home";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.css";
 import "../src/styles/global.scss";
-import Header from "./components/Header";
-
+import Landing from "./pages/Landing";
+import HeaderContent from "./components/HeaderContent";
 function App() {
   return (
     <div className="App">
-      <header className="bg-light">
-        <Header />
-      </header>
+      <HeaderContent />
       <div className="container">
         <Landing />
       </div>
-    </div>  
+    </div>
   );
 }
 
