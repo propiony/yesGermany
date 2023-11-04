@@ -1,4 +1,4 @@
-import ButtonPrimary from "../components/ButtonPrimary";
+import ButtonPrimary from "./common/ButtonPrimary";
 import Dubai from "../assets/images/dubai.png";
 import India from "../assets/images/india.png";
 const Header = () => (

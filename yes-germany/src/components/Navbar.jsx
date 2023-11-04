@@ -2,9 +2,9 @@ import Logo from "../assets/images/logo.png";
 
 const Navbar = () => (
   <>
-    <nav className="navbar navbar-expand-lg navbar-light sticky-top">
+    <nav className="navbar navbar-expand-lg navbar-light sticky-top bg-light">
       <div
-        className="collapse home-container navbar-collapse flex-row fs-6 justify-content-center"
+        className="collapse home-container navbar-collapse flex-row fs-6 justify-content-center px-2"
         id="navbarNav"
       >
         <a className="navbar-brand" href="#">

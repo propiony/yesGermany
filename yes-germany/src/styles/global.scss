@@ -5,10 +5,11 @@ $secondary-color: #6c757d; // Define a secondary color
 // Typography Variables
 $base-font-size: 16px; // Define the base font size for the entire app
 $font-family: "Mona-Sans", sans-serif; // Define the default font family
-$heading-font-family: "Roboto", sans-serif; // Font for headings
+$heading-font-family: "Mona-Sans", sans-serif; // Font for headings
 
-$h1-font-size: 2rem; // Font size for <h1> elements
-$h2-font-size: 1.5rem; // Font size for <h2> elements
+$h1-font-size: 60px; // Font size for <h1> elements
+$h2-font-size: 48px; // Font size for <h2> elements
+$h3-font-size: 36px;
 
 // Spacing Variables
 $spacing-unit: 8px; // Define a spacing unit for consistent padding/margin
@@ -68,18 +69,31 @@ h2 {
   border: none;
   color: black;
 }
-.home-container{
+
+.btn-secondary {
+  border-radius: 8px;
+  border: 2px solid #e0b812;
+  background: #f9f8f3;
+  color: black;
+}
+
+.btn-secondary:hover {
+  color: #e0b812;
+  background-color: #ffff;
+  border: 2px solid #e0b812;
+}
+.home-container {
   max-width: $container-max-width;
   margin: 0 auto;
 }
-.App{
+.App {
   height: 2000px;
 }
-.nav-link{
-  padding:  0 8px!important;
+.nav-link {
+  padding: 0 8px !important;
 }
-nav{
-  height: 55px;
+nav {
+  height: 65px;
 }
 
 .container {
@@ -119,7 +133,3 @@ nav{
     transform: translateX(100%); /* End position (completely off to the left) */
   }
 }
-
-
-
-
