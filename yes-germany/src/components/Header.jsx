@@ -2,7 +2,7 @@ import ButtonPrimary from "../components/ButtonPrimary";
 import Dubai from "../assets/images/dubai.png";
 import India from "../assets/images/india.png";
 const Header = () => (
-  <div className="d-flex container py-2 ">
+  <div className="d-flex py-2 home-container">
     <div>
       <img src={India} alt="india contact" />
     </div>

@@ -68,12 +68,58 @@ h2 {
   border: none;
   color: black;
 }
-
+.home-container{
+  max-width: $container-max-width;
+  margin: 0 auto;
+}
+.App{
+  height: 2000px;
+}
 .nav-link{
-  padding:  0 16px!important;
+  padding:  0 8px!important;
+}
+nav{
+  height: 55px;
 }
 
 .container {
   max-width: $container-max-width;
   margin: 0 auto;
+  height: 2000px;
 }
+
+.banner {
+  background: linear-gradient(90deg, #e8bc02 0%, #fed114 100%);
+  box-shadow: 0px 17.5px 59.5px 0px rgba(0, 0, 0, 0.05);
+  height: 36px;
+  position: sticky;
+  top: 65px;
+}
+.scrolling-text {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Text inside the container */
+.scrolling-text p {
+  display: inline-block;
+  padding-left: 50%; /* Move the text initially out of view to the right */
+  animation: scrollText 30s linear infinite; /* Adjust duration as needed */
+  margin: 0;
+  font-weight: 600;
+  font-size: $small-font-size;
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(-100%); /* Start position (completely hidden) */
+  }
+  100% {
+    transform: translateX(100%); /* End position (completely off to the left) */
+  }
+}
+
+
+
+
