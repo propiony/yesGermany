@@ -1,0 +1,134 @@
+.hero-container{
+  height: 757px;
+}
+.tag {
+  border-radius: 10.667px;
+  background: #353535;
+  color: #ffce00;
+  //font-family: Inter;
+  width: 378px;
+  height: 38px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  p {
+    padding: 10px 0;
+  }
+}
+.intro-section {
+  max-width: 846px;
+  height: 757px;
+}
+.hero-heading {
+  h1 {
+    font-weight: 700;
+    line-height: 120%; /* 72px */
+    letter-spacing: 2.4px;
+    margin-bottom: 36px;
+  }
+  p {
+    max-width: 732px;
+    color: #656565;
+    //font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; /* 27px */
+    margin-bottom: 24px;
+  }
+  .hero-bg {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 367px;
+    background-image: url("../assets/images/hero-banner.png");
+  }
+
+  .hero-buttons {
+    max-width: 605px;
+  }
+  .card-content {
+    margin-top: 190px;
+  }
+}
+.scroll-sec {
+  width: 520px;
+  height: 675px;
+}
+.scroll-banner-section {
+  height: 674px;
+  overflow: hidden;
+  position: relative; /* Add relative positioning */
+  //white-space: nowrap;
+  box-shadow: inset 0 0 10px white;
+}
+
+.collage {
+  //display: flex;
+  display: inline-block;
+
+  flex-direction: column;
+  animation: scrollImages 20s linear infinite;
+  //position: absolute; /* Add absolute positioning */
+  //top: 0; /* Start from the top of the container */
+}
+
+.collage img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  box-sizing: border-box;
+  margin: 20px 20px 0;
+}
+.collage-2 {
+  //display: flex;
+  display: inline-block;
+
+  flex-direction: column;
+  animation: scrollImages 30s linear infinite;
+  //position: absolute; /* Add absolute positioning */
+  //top: 0; /* Start from the top of the container */
+}
+
+.collage-2 img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  box-sizing: border-box;
+  margin: 20px 20px 0;
+}
+
+@keyframes scrollImages {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%); /* Move images up by their height */
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .hero-container{
+    height: 1400px;
+  }
+  .scroll-sec {
+    width: auto;
+    //height: 675px;
+  }
+  .intro-section {
+    max-width: 846px;
+    height: 757px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .intro-section {
+    max-width: 846px;
+    height: 900px;
+  }
+  .scroll-sec {
+    width: auto;
+    //height: 675px;
+  }
+}

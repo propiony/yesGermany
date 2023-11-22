@@ -1,0 +1,22 @@
+.carousal-container {
+ // height: 928px;
+  p {
+    text-align: left;
+    margin-top: 21px;
+  }
+  .row {
+    margin-top: 40px;
+    .card {
+      text-align: left;
+      .card-body {
+        h5 {
+          color: var(--grey-15, #262626);
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
