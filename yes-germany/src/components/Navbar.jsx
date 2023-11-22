@@ -2,12 +2,12 @@ import Logo from "../assets/images/logo.png";
 
 const Navbar = () => (
   <>
-    <nav className="navbar navbar-expand-lg navbar-light sticky-top bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light ">
       <div
         className="collapse home-container navbar-collapse flex-row fs-6 justify-content-center px-2"
         id="navbarNav"
       >
-        <a className="navbar-brand" href="#">
+        <a className="navbar-brand" href="/#">
           <img alt="logo" src={Logo} />
         </a>
         <button

@@ -4,11 +4,10 @@ import "../src/styles/global.scss";
 import Landing from "./pages/Landing";
 import HeaderContent from "./components/HeaderContent";
 function App() {
-  
   return (
     <div className="App">
       <HeaderContent />
-      <div className="container">
+      <div>
         <Landing />
       </div>
     </div>

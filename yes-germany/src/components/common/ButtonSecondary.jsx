@@ -1,7 +1,9 @@
-const ButtonSecondary=(props)=>{
-    const {width, text,}=props
-    return <>
-    <button width={width} className="btn btn-secondary">{text}</button>
+const ButtonSecondary = (props) => {
+  const { text } = props;
+  return (
+    <>
+      <button className="btn btn-secondary">{text}</button>
     </>
-}
+  );
+};
 export default ButtonSecondary;

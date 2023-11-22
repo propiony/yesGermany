@@ -1,13 +1,13 @@
 import "../styles/hero.scss";
-import ButtonPrimary from "./common/ButtonPrimary";
-import ButtonSecondary from "./common/ButtonSecondary";
-import { Card } from "./common/Card";
+import { Card } from "./common/CardPrimary";
 import image1 from "../assets/images/image1.png";
 import image2 from "../assets/images/image2.png";
 import image3 from "../assets/images/image3.png";
 import image4 from "../assets/images/image4.png";
 import image5 from "../assets/images/image5.png";
 import image6 from "../assets/images/image6.png";
+import google from "../assets/images/googleReview.png";
+import justDial from "../assets/images/justDialReview.png";
 // import {image1,image2,image3,image4} from "..3assets/images"
 export const Hero = () => {
   const cardContent = [
@@ -17,9 +17,9 @@ export const Hero = () => {
     { head: "99.9%", text: "Offices All Over India" },
   ];
   return (
-    <div className="hero-container d-flex">
-      <div className="into-section d-flex flex-column flex-fill">
-        <div className="tag">
+    <div className="hero-container row">
+      <div className="intro-section flex-fill col-md-12 col-lg-6">
+        <div className="tag my-4">
           <p>German Education Consultant in India</p>
         </div>
         <div className="hero-heading text-start">
@@ -30,57 +30,68 @@ export const Hero = () => {
             .
           </p>
           <div className="hero-bg">
-            <div className="hero-buttons">
-              <ButtonPrimary text="Schedule Free Profile Evaluation" />
+            <div className="hero-buttons mb-3">
+              {/* <ButtonPrimary text="Schedule Free Profile Evaluation" />
               <ButtonSecondary text="Talk to an Expert" />
+               */}
+              <button className="btn btn-primary px-4 me-2">
+                Schedule Free Profile Evaluation
+              </button>
+              <button className="btn btn-secondary px-4">
+                Talk to an Expert
+              </button>
             </div>
             <p>Ready to embark on this exciting journey?</p>
-            <div className="card-content d-flex flex-row">
+            <div className="card-content d-flex row">
               {cardContent?.map(({ head, text }, index) => (
-                <div className="px-2" key={`card ${index}`}>
-                  <Card head={head} content={text} />
-                </div>
+                <Card head={head} content={text} key={`card ${index}`} />
               ))}
             </div>
           </div>
         </div>
       </div>
-      <div className="scroll-sec d-flex flex-row">
-        <div className="scroll-banner-section flex-fill">
-          <div class="collage">
-            <img className="first" src={image1} alt="Image 1" />
-            <img src={image2} alt="Image 1" />
-            <img src={image3} alt="Image 1" />
-            <img src={image4} alt="Image 1" />
-            <img src={image5} alt="Image 1" />
-            <img src={image6} alt="Image 1" />
+      <div className="scroll-sec col-md-12 col-lg-6">
+        <div className="d-flex flex-row">
+          <div className="scroll-banner-section flex-fill ">
+            <div class="collage">
+              <img className="first" src={image1} alt="scrollImage" />
+              <img src={image2} alt="scrollImage" />
+              <img src={image3} alt="scrollImage" />
+              <img src={image4} alt="scrollImage" />
+              <img src={image5} alt="scrollImage" />
+              <img src={image6} alt="scrollImage" />
+            </div>
+            <div class="collage">
+              <img className="first" src={image1} alt="scrollImage" />
+              <img src={image2} alt="scrollImage" />
+              <img src={image3} alt="scrollImage" />
+              <img src={image4} alt="scrollImage" />
+              <img src={image5} alt="scrollImage" />
+              <img src={image6} alt="scrollImage" />
+            </div>
           </div>
-          <div class="collage">
-            <img className="first" src={image1} alt="Image 1" />
-            <img src={image2} alt="Image 1" />
-            <img src={image3} alt="Image 1" />
-            <img src={image4} alt="Image 1" />
-            <img src={image5} alt="Image 1" />
-            <img src={image6} alt="Image 1" />
+          <div className="scroll-banner-section  flex-fill">
+            <div class="collage-2">
+              <img className="first" src={image1} alt="scrollImage" />
+              <img src={image2} alt="scrollImage" />
+              <img src={image3} alt="scrollImage" />
+              <img src={image4} alt="scrollImage" />
+              <img src={image5} alt="scrollImage" />
+              <img src={image6} alt="scrollImage" />
+            </div>
+            <div class="collage-2">
+              <img className="first" src={image1} alt="scrollImage" />
+              <img src={image2} alt="scrollImage" />
+              <img src={image3} alt="scrollImage" />
+              <img src={image4} alt="scrollImage" />
+              <img src={image5} alt="scrollImage" />
+              <img src={image6} alt="scrollImage" />
+            </div>
           </div>
         </div>
-        <div className="scroll-banner-section  flex-fill">
-          <div class="collage-2">
-            <img className="first" src={image1} alt="Image 1" />
-            <img src={image2} alt="Image 1" />
-            <img src={image3} alt="Image 1" />
-            <img src={image4} alt="Image 1" />
-            <img src={image5} alt="Image 1" />
-            <img src={image6} alt="Image 1" />
-          </div>
-          <div class="collage-2">
-            <img className="first" src={image1} alt="Image 1" />
-            <img src={image2} alt="Image 1" />
-            <img src={image3} alt="Image 1" />
-            <img src={image4} alt="Image 1" />
-            <img src={image5} alt="Image 1" />
-            <img src={image6} alt="Image 1" />
-          </div>
+        <div className="row mt-2">
+          <img className="col-6" src={justDial} alt="review" />
+          <img className="col-6" src={google} alt="review" />
         </div>
       </div>
     </div>

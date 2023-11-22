@@ -40,6 +40,10 @@ $medium-font-size: 16px; // Font size for medium screens
 $large-font-size: 18px; // Font size for large screens
 
 // Example usage in your SCSS file
+.header-sec {
+  position: sticky;
+}
+
 body {
   font-size: $base-font-size;
   font-family: $font-family;
@@ -87,27 +91,29 @@ h2 {
   margin: 0 auto;
 }
 .App {
-  height: 2000px;
+  //height: 2000px;
 }
 .nav-link {
   padding: 0 8px !important;
 }
 nav {
   height: 65px;
+  background-color: #fff;
 }
 
 .container {
   max-width: $container-max-width;
   margin: 0 auto;
-  height: 2000px;
+  //height: 2000px;
 }
 
 .banner {
   background: linear-gradient(90deg, #e8bc02 0%, #fed114 100%);
   box-shadow: 0px 17.5px 59.5px 0px rgba(0, 0, 0, 0.05);
   height: 36px;
-  position: sticky;
+  // position: sticky;
   top: 65px;
+  z-index: 1000;
 }
 .scrolling-text {
   width: 100%;
@@ -133,3 +139,151 @@ nav {
     transform: translateX(100%); /* End position (completely off to the left) */
   }
 }
+
+//write media query for large, medium and small desktop and mobile
+@media screen and (min-width: 1200px) {
+  .carousal-container {
+    margin-top: 100px;
+    h2 {
+      text-align: left;
+    }
+  }
+  .middle-container {
+    padding-top: 88px;
+    margin-top: 90px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(
+      180deg,
+      rgba(53, 53, 53, 0) 12.2%,
+      #282828 92.84%
+    );
+    .thanks {
+      margin: 46px 0 85px;
+    }
+    .feedback-header {
+      margin: 120px 0 80px;
+    }
+    .review-btn {
+      position: absolute;
+      bottom: 100px;
+    }
+  }
+  .gallery-container {
+    h2 {
+      margin: 80px 0 48px;
+    }
+    .video-section {
+      margin-bottom: 48px;
+    }
+    .gallery-cards {
+      margin-top: 48px;
+      .col-4 {
+        margin-bottom: 32px;
+      }
+    }
+  }
+  .free-consultation {
+    margin-top: 80px;
+    h2 {
+      margin: 0 0 32px;
+    }
+    p {
+      width: 60%;
+      margin: 0 auto;
+    }
+    .gallery-btns {
+      margin-top: 35px;
+      button {
+        margin-right: 8px;
+      }
+    }
+  }
+  .info-section {
+    padding-top: 80px;
+    h1 {
+      text-align: left;
+      color: #fff;
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 120%; /* 57.6px */
+      letter-spacing: 1.92px;
+      margin-bottom: 24px;
+    }
+    .para-1,
+    .para-2 {
+      text-align: left;
+      width: 80%;
+    }
+    p {
+      text-align: left;
+    }
+    .para-1 {
+      color: #fff;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%; /* 30px */
+      letter-spacing: 0.8px;
+      margin-bottom: 36px;
+    }
+    .para-2 {
+      color: #fafafa;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 27px */
+      letter-spacing: -0.1px;
+      margin-bottom: 72px;
+    }
+    .statistics {
+      margin-bottom: 64px;
+      .col-3 {
+        h1 {
+          margin-bottom: 8px;
+        }
+      }
+    }
+    .statistics-cards {
+      margin-bottom: 80px;
+      .card {
+        border-radius: 12px;
+        border: 1px solid #8d8d8d;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(2px);
+        padding: 24px 16px;
+        color: #fff;
+        text-align: left;
+        h3 {
+          color: #fafafa;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 30px; /* 136.364% */
+          letter-spacing: -0.22px;
+        }
+      }
+    }
+    .btn {
+      width: 270px;
+    }
+  }
+}
+
+// @media screen and (min-width: 768px) {
+//   .carousal-container {
+//     margin-top: 150px;
+//     h2 {
+//       text-align: left;
+//     }
+//   }
+// }
+// @media screen and (min-width: 420px) {
+//   .carousal-container {
+//     margin-top: 330px;
+//     h2 {
+//       text-align: left;
+//     }
+//   }
+// }

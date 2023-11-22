@@ -4,10 +4,12 @@ import Tag from "../assets/images/germanyTag.png";
 import Header from "../components/Header";
 const HeaderContent = () => (
   <>
-    <header className="bg-light ">
-      <Header />
-    </header>
-    <Navbar />
+    <div className="sticky-top">
+      <header className="bg-light">
+        <Header />
+      </header>
+      <Navbar />
+    </div>
     <div className="banner d-flex">
       <img src={Tag} alt="germany tag" />
       <div className="align-self-center scrolling-text">
