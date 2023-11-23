@@ -22,7 +22,9 @@ export const WhyGermany = () => {
   return (
     <>
       <div className="carousal-container ">
-        <h2>Why Students Choose YesGermany</h2>
+        <h2 className="carousal-header">
+          Why Students Choose <span>YesGermany</span>
+        </h2>
         <p>
           At YesGermany, we're not just an Education consultancy; we are your
           companions on a journey for your Future.

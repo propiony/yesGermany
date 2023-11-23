@@ -58,7 +58,7 @@ const Gallery = () => {
       </p>
       <div className="gallery-cards row">
         {galleryCards.map((item) => (
-          <div className="col-4" key={item.head}>
+          <div className="col-12 col-sm-6 col-md-4" key={item.head}>
             <Card head={item.head} content={item.content} />
           </div>
         ))}
