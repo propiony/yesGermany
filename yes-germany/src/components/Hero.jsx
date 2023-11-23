@@ -42,9 +42,11 @@ export const Hero = () => {
               </button>
             </div>
             <p>Ready to embark on this exciting journey?</p>
-            <div className="card-content d-flex row">
+            <div className="card-content  row">
               {cardContent?.map(({ head, text }, index) => (
-                <Card head={head} content={text} key={`card ${index}`} />
+                <div className="col-6 col-lg-3">
+                  <Card head={head} content={text} key={`card ${index}`} />
+                </div>
               ))}
             </div>
           </div>

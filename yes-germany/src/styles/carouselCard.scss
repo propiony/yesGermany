@@ -1,4 +1,12 @@
 .card{
-    width: 415px;
+    width: 400px;
     margin-right: 10px;
+    padding-top: 10px;
+}
+@media screen and (max-width: 1024px) {
+    .card{
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
 }
