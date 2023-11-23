@@ -1,4 +1,4 @@
-.hero-container{
+.hero-container {
   height: 757px;
 }
 .tag {
@@ -20,7 +20,7 @@
 }
 .intro-section {
   max-width: 846px;
-  height: 757px;
+//  height: 757px;
 }
 .hero-heading {
   h1 {
@@ -49,7 +49,6 @@
   .hero-buttons {
     max-width: 605px;
   }
-  
 }
 .scroll-sec {
   width: 520px;
@@ -110,7 +109,7 @@
   margin-top: 190px;
 }
 @media screen and (max-width: 1024px) {
-  .hero-container{
+  .hero-container {
     height: 1500px;
   }
   .scroll-sec {
@@ -119,14 +118,14 @@
   }
   .intro-section {
     max-width: 846px;
-    height: 750px;
+   // height: 750px;
   }
   .card-content {
     margin-top: 20px;
   }
 }
 @media screen and (max-width: 768px) {
-  .hero-container{
+  .hero-container {
     height: 1430px;
   }
   .scroll-sec {
@@ -135,51 +134,63 @@
   }
   .intro-section {
     max-width: 846px;
-    height: 830px;
+   // height: 830px;
   }
   .card-content {
     //margin-top: 190px;
   }
-  
 }
 @media screen and (max-width: 500px) {
-  .hero-container{
-    height: 1830px;
+  .hero-container {
+    height: 1630px;
+    .hero-heading {
+      h1 {
+        color: #2d2d2d;
+        //font-family: Mona-Sans;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 38.4px */
+      }
+      p{
+        font-size: 16px;
+      }
+    }
   }
   .intro-section {
     max-width: 846px;
-    height: 965px;
+    //height: 500px;
   }
   .scroll-sec {
     width: auto;
-    height: 675px;
+    //height: 675px;
   }
   .card-content {
     margin-top: 10px;
   }
-  .hero-buttons{
-    button{
+  .hero-buttons {
+    button {
       margin-bottom: 10px;
     }
   }
 }
 @media screen and (max-width: 425px) {
-  .hero-container{
-    height: 1800px;
+  .hero-container {
+    height: 1600px;
   }
   .intro-section {
     max-width: 846px;
-    height: 965px;
+   // height: 500px;
   }
   .scroll-sec {
     width: auto;
-    height: 675px;
+   // height: 675px;
   }
   .card-content {
     margin-top: 10px;
   }
-  .hero-buttons{
-    button{
+  .hero-buttons {
+    button {
       margin-bottom: 10px;
     }
   }

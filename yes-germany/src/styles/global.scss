@@ -42,6 +42,10 @@ $large-font-size: 18px; // Font size for large screens
 // Example usage in your SCSS file
 .header-sec {
   position: sticky;
+  // .country-contacts {
+  //   visibility: visible;
+  // }
+
 }
 
 body {
@@ -93,6 +97,33 @@ h2 {
 .App {
   //height: 2000px;
 }
+
+.header-contact {
+  border-radius: 17.58px;
+  border: 1.099px solid rgba(0, 0, 0, 0.08);
+  background: #fff;
+  width: 210px;
+  height: 47px;
+  text-align: left;
+  padding: 6px 18px;
+  align-items: center;
+  .country {
+    color: rgba(0, 0, 0, 0.4);
+    //font-family: Jost;
+    font-size: 10.987px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 13.185px; /* 120% */
+  }
+  .contact-link {
+    color: #000;
+    //font-family: Inter;
+    font-size: 15.382px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19.777px; /* 128.571% */
+  }
+}
 .nav-link {
   padding: 0 8px !important;
 }
@@ -141,7 +172,29 @@ nav {
 }
 
 //write media query for large, medium and small desktop and mobile
-@media screen and (min-width: 1280px) {
+@media screen and (max-width: 1024px) {
+  .country-contacts{
+    display: flex;
+    
+  }
+
+  // .arrange{
+  //   text-align: right;
+  // }
+
+}
+@media screen and (max-width: 500px) {
+  .country-contacts{
+    display: none!important;
+  }
+  // .header-contact{
+  //   margin: 10px 0!important;
+  // }
+  // .arrange{
+  //   text-align: left;
+  // }
+}
+@media screen and (min-width: 1024px) {
   .carousal-container {
     margin-top: 100px;
     h2 {
@@ -278,11 +331,11 @@ nav {
       text-align: left;
     }
   }
-
 }
 @media screen and (min-width: 420px) {
+
   .carousal-container {
-   // margin-top: 330px;
+    // margin-top: 330px;
     h2 {
       text-align: left;
     }

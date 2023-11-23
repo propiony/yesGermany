@@ -1,6 +1,6 @@
 .gallery-container {
- // height: 2000px;
- margin-bottom: 136px;
+  // height: 2000px;
+  margin-bottom: 136px;
   h2 {
     color: #2d2d2d;
     text-align: center;
@@ -36,7 +36,6 @@
     }
   }
   .video-section {
-      
   }
 
   .hero-card {
@@ -96,5 +95,43 @@
     border-radius: 16px;
     border-bottom: 8px solid #ffce00;
     background: #282828;
+  }
+}
+@media (max-width: 768px) {
+  .gallery-container {
+    margin-top: 40px;
+    // .video-section{
+    //   width: 343px;
+    //   height: 204px;
+    // }
+    
+    p {
+      text-align: left;
+      font-size: 18px;
+      span {
+        font-size: 18px;
+      }
+    }
+    h2 {
+      font-size: 28px;
+      span {
+        font-size: 28px;
+      }
+      margin-bottom: 48px;
+    }
+    .gallery-cards{
+      margin-bottom: 40px;
+    }
+    .free-consultation{
+      padding: 32px;
+      h2{
+        font-size: 28px;
+      }
+    }
+    .gallery-btns{
+      .btn{
+        margin-bottom: 10px;
+      }
+    }
   }
 }
