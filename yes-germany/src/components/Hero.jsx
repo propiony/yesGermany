@@ -8,18 +8,18 @@ import image5 from "../assets/images/image5.png";
 import image6 from "../assets/images/image6.png";
 import google from "../assets/images/googleReview.png";
 import justDial from "../assets/images/justDialReview.png";
+import rightArrow from "../assets/images/right.svg"
 // import {image1,image2,image3,image4} from "..3assets/images"
 export const Hero = () => {
   const cardContent = [
     { head: "30k+", text: "Students Counselled" },
     { head: "15k+", text: "Students Counselled" },
-    { head: "99.9%", text: "99.9%" },
-    { head: "99.9%", text: "Offices All Over India" },
+    { head: "10+", text: "Offices All Over India " }
   ];
   return (
     <div className="hero-container row">
       <div className="intro-section flex-fill col-md-12 col-lg-6">
-        <div className="tag my-4">
+        <div className="tag">
           <p>German Education Consultant in India</p>
         </div>
         <div className="hero-heading text-start">
@@ -30,21 +30,21 @@ export const Hero = () => {
             .
           </p>
           <div className="hero-bg">
-            <div className="hero-buttons mb-3">
+            <div className="hero-buttons d-flex mb-3">
               {/* <ButtonPrimary text="Schedule Free Profile Evaluation" />
               <ButtonSecondary text="Talk to an Expert" />
                */}
               <button className="btn btn-primary px-4 me-2">
                 Schedule Free Profile Evaluation
               </button>
-              <button className="btn btn-secondary px-4">
-                Talk to an Expert
+              <button className="btn btn-secondary d-flex px-4">
+                Chat with Expert <img src={rightArrow} alt="rightArrow"/>
               </button>
             </div>
             <p>Ready to embark on this exciting journey?</p>
-            <div className="card-content  row">
+            <div className="card-content row">
               {cardContent?.map(({ head, text }, index) => (
-                <div className="col-6 col-lg-3">
+                <div className="col-6 col-lg-4">
                   <Card head={head} content={text} key={`card ${index}`} />
                 </div>
               ))}

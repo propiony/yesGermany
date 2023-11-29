@@ -1,8 +1,5 @@
 import { useState } from "react";
 import "../styles/3DSlider.scss";
-import Slider from "react-slick";
-import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import Image1 from "../assets/images/image 42.png";
 import Arrow1 from "../assets/images/Arrow 1.png";
 import Arrow2 from "../assets/images/Arrow 2.png";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -53,6 +50,7 @@ function ThreeDCarousel() {
     prevArrow: <PrevArrow />,
     beforeChange: (current, next) => setImageIndex(next),
   };
+  console.log(settings)
   const YoutubeEmbed = ({ embedId }) => (
     <div className="video-responsive">
       <iframe

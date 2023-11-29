@@ -1,21 +1,21 @@
 .hero-container {
-  height: 757px;
+ // height: 757px;
 }
 .tag {
-  border-radius: 10.667px;
+  border-radius: 4px;
   background: #353535;
+  margin: 48px 0 16px;
   color: #ffce00;
-  //font-family: Inter;
-  width: 378px;
-  height: 38px;
-  font-size: 14px;
+  width: 275px;
+  height: 20px  ;
+  font-size: 10px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 1.4px;
+  letter-spacing: 1px;
   text-transform: uppercase;
   p {
-    padding: 10px 0;
+    padding: 4px 0;
   }
 }
 .intro-section {
@@ -24,25 +24,25 @@
 }
 .hero-heading {
   h1 {
+    font-size: 48px;
     font-weight: 700;
     line-height: 120%; /* 72px */
     letter-spacing: 2.4px;
-    margin-bottom: 36px;
+    margin-bottom: 20px;
   }
   p {
-    max-width: 732px;
+    max-width: 632px;
     color: #656565;
     //font-family: Inter;
-    font-size: 18px;
+    font-size: 14px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 150%; /* 27px */
-    margin-bottom: 24px;
   }
   .hero-bg {
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 367px;
+    background-size: 800px;
+    //height: 367px;
     background-image: url("../assets/images/hero-banner.png");
   }
 
@@ -52,10 +52,10 @@
 }
 .scroll-sec {
   width: 520px;
-  height: 675px;
+  //height: 534px;
 }
 .scroll-banner-section {
-  height: 674px;
+  height: 534px;
   overflow: hidden;
   position: relative; /* Add relative positioning */
   //white-space: nowrap;
@@ -106,27 +106,29 @@
   }
 }
 .card-content {
-  margin-top: 190px;
+  margin-top: 168px;
 }
 @media screen and (max-width: 1024px) {
   .hero-container {
-    height: 1500px;
+   // height: 1500px;
   }
   .scroll-sec {
     width: auto;
+    margin-top: 20px;
     //height: 675px;
   }
   .intro-section {
-    max-width: 846px;
+    width: auto;
+    max-width: none;
    // height: 750px;
   }
   .card-content {
-    margin-top: 20px;
+    //margin-top: 20px;
   }
 }
 @media screen and (max-width: 768px) {
   .hero-container {
-    height: 1430px;
+  //  height: 1430px;
   }
   .scroll-sec {
     width: auto;
@@ -142,7 +144,7 @@
 }
 @media screen and (max-width: 500px) {
   .hero-container {
-    height: 1630px;
+    //height: 1630px;
     .hero-heading {
       h1 {
         color: #2d2d2d;
@@ -176,7 +178,7 @@
 }
 @media screen and (max-width: 425px) {
   .hero-container {
-    height: 1600px;
+   // height: 1600px;
   }
   .intro-section {
     max-width: 846px;

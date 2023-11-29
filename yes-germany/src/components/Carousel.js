@@ -77,7 +77,7 @@ const Carousel = () => {
         </h2>
         <div className="thanks">#ThanksYesGermany</div>
       <ThreeDCarousel />
-      <h2 className="feedback-header">Our Student Community Feedbacks and Testimonials</h2>
+      {/* <h2 className="feedback-header">Our Student Community Feedbacks and Testimonials</h2>
       
       <div className="cards-section row home-container">
         {avatar.map((i) => (
@@ -86,7 +86,8 @@ const Carousel = () => {
           </div>
         ))}
       </div>
-      <button className="review-btn btn btn-primary">View All Reviews</button>
+      <button className="review-btn btn btn-primary">View All Reviews</button> */}
+      
     </div>
   );
 };
